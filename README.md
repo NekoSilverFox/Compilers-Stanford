@@ -189,7 +189,7 @@
 **为什么有这么多编程语言**
 
 - 很难有一门编程语言能适应所有的需求和环境。
-- 比如，对于科学运算的语言，需要对浮点有很好的运算（FP）、数组操作有着很好的支持、并行处理。直到现在 FORTRAN还是被重度应用，虽然它已经不是以前的样子了
+- 比如，对于科学运算的语言，需要对浮点有很好的运算（FP）、数组操作有着很好的支持、并行处理。直到现在 FORTRAN 还是被重度应用，虽然它已经不是以前的样子了
 - 比如，对于商业，需要持久性（不要丢数据）、可靠好的方式生成报告、数据处理能力，比如 SQL
 - 比如，对于系统编程，需要很好的底层控制，对资源有很好的控制、对时间进行预判使设备能够迅速响应（比如网络处理器）。C/C++是代表
 
@@ -318,7 +318,7 @@ class Main {
 
 
 
-### 02-02 Cool Example II
+### [02-02] Cool 例 II
 
 
 
@@ -328,7 +328,87 @@ class Main {
 
 
 
-### 02-03 Cool Example III
+### [02-03] Cool 例 III
+
+
+
+# Week 2
+
+## 词法分析
+
+### token
+
+![image-20220407114730270](doc/pic/README/image-20220407114730270.png)
+
+![image-20220407114939639](doc/pic/README/image-20220407114939639.png) 
+
+![image-20220407121625001](doc/pic/README/image-20220407121625001.png)
+
+![image-20220407115323873](doc/pic/README/image-20220407115323873.png)
+
+
+
+所以词法分析其实就是在做两件事情：
+
+1. 识别输入中与标记相对应的子字符串
+
+    在程序中这些被称作：词素
+
+    
+
+    英：
+
+    **token = <token class, lexeme>**
+
+    
+
+    中：
+
+    **词法单元 = <标记类, 词法名>**
+
+    
+
+2. 确定我们的标记类
+
+
+
+---
+
+**习题：**
+
+![image-20220407122434495](doc/pic/README/image-20220407122434495.png)
+
+Note that **'\t\n' is a single whitespace token**. Also remember that 'x' is an identifier but 'while' is a keyword. Finally, note **that '++' and '10' are both ==single== tokens**
+
+请注意，**'\t\n'是一个单一的白空间标记**。还要记住，'x'是一个标识符，但'while'是一个关键词。最后，请注意**'++'和'10'都是单个标记**。
+
+---
+
+
+
+### 正则语言
+
+<img src="doc/pic/README/image-20220407134833813.png" alt="image-20220407134833813" style="zoom:50%;" />
+
+![image-20220407135246010](doc/pic/README/image-20220407135246010.png)
+
+![image-20220407135531360](doc/pic/README/image-20220407135531360.png)
+
+![image-20220407143017409](doc/pic/README/image-20220407143017409.png)
+
+---
+
+
+
+**题目：**
+
+![image-20220407144150191](doc/pic/README/image-20220407144150191.png)
+
+---
+
+### 形式语言
+
+正则表达式是形式化语言的一种
 
 
 
