@@ -406,9 +406,23 @@ Note that **'\t\n' is a single whitespace token**. Also remember that 'x' is an 
 
 ---
 
+
+
 ### 形式语言
 
 正则表达式是形式化语言的一种
 
+**定义：**
 
+正则语言要有一个字符集（∑）
+
+
+
+---
+
+L 代表从这个区域（Exp）映射到这个区域（SetStrings）
+
+![image-20220408100414876](doc/pic/README/image-20220408100414876.png)
+
+![image-20220408142517576](doc/pic/README/image-20220408142517576.png)
 
