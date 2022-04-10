@@ -24,6 +24,10 @@
 # Week 1 简介 & Cool 语言
 
 > Introduction & the Cool Programming Language
+>
+> https://www.keithschwarz.com/cs143/WWW/sum2011/
+
+
 
 
 
@@ -497,9 +501,13 @@ L 代表从这个区域（Exp）映射到这个区域（SetStrings）
 
 
 
+### DFA 到 NFA
 
+![image-20220410132047932](doc/pic/README/image-20220410132047932.png)
 
+![image-20220410132510377](doc/pic/README/image-20220410132510377.png)
 
+![image-20220410141231973](doc/pic/README/image-20220410141231973.png)
 
 
 
