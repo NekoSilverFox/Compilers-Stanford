@@ -26,6 +26,10 @@
 > Introduction & the Cool Programming Language
 >
 > https://www.keithschwarz.com/cs143/WWW/sum2011/
+>
+> https://mycourses.aalto.fi/course/view.php?id=27184
+>
+> http://sharif.edu/~sani/courses/compiler/
 
 
 
@@ -508,6 +512,80 @@ L 代表从这个区域（Exp）映射到这个区域（SetStrings）
 ![image-20220410132510377](doc/pic/README/image-20220410132510377.png)
 
 ![image-20220410141231973](doc/pic/README/image-20220410141231973.png)
+
+
+
+### 实现有穷自动机
+
+可以通过二维数组实现 DFA
+
+
+
+状态 i，输入 a，--> 移动到 k
+
+![image-20220410142401693](doc/pic/README/image-20220410142401693.png)
+
+![image-20220410143644956](doc/pic/README/image-20220410143644956.png)
+
+![image-20220410143913294](doc/pic/README/image-20220410143913294.png)
+
+
+
+
+
+如果不转换成 DFA，代价会比较高
+
+![image-20220410144156571](doc/pic/README/image-20220410144156571.png)
+
+
+
+### Quiz 1
+
+> http://doraemonzzz.com/2020/09/06/Stanford%20Compiler%20Quiz%201/#Question-1
+
+1. 
+
+![image-20220410145828242](doc/pic/README/image-20220410145828242.png)
+
+2. https://cs.stackexchange.com/questions/84928/tokenization-problem
+
+    ![image-20220410151729330](doc/pic/README/image-20220410151729330.png)
+
+3. ![image-20220410151905461](doc/pic/README/image-20220410151905461.png)
+
+4. ![image-20220410152128053](doc/pic/README/image-20220410152128053.png)
+
+5. ![image-20220410152323336](doc/pic/README/image-20220410152323336.png)
+
+6. ![image-20220410152457819](doc/pic/README/image-20220410152457819.png)
+
+7. ![image-20220410153054033](doc/pic/README/image-20220410153054033.png)
+
+8. ![image-20220410155125616](doc/pic/README/image-20220410155125616.png)
+
+    <img src="doc/pic/README/image-20220410153733670.png" alt="image-20220410153733670" style="zoom:50%;" />
+
+9. ![image-20220410155628436](doc/pic/README/image-20220410155628436-9595389.png)
+
+10. ![image-20220410160308087](doc/pic/README/image-20220410160308087.png)
+
+11. ![image-20220410170157723](doc/pic/README/image-20220410170157723.png)
+
+12. ![image-20220410170327203](doc/pic/README/image-20220410170327203.png)
+
+    注意NFA是可能有ϵ−移动，所以第一项是NFA；
+
+    第二项有多个转移，所以也是NFA；
+
+    第三项有ϵ，所以也是NFA；
+
+    最后一项有无限多个状态，所以不是NFA
+
+    
+
+---
+
+
 
 
 
