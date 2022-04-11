@@ -1,0 +1,3 @@
+./trickyatdispatch2.test:1: Error! Static dispatch class is not an ancestor.
+./trickyatdispatch2.test:1: Error! return type is not ancestor of expr type. 
+Compilation halted due to static semantic errors.
