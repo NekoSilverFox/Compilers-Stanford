@@ -573,7 +573,7 @@ L 代表从这个区域（Exp）映射到这个区域（SetStrings）
 
 12. ![image-20220410170327203](doc/pic/README/image-20220410170327203.png)
 
-    注意NFA是可能有ϵ−移动，所以第一项是NFA；
+    **注意NFA是可能有ϵ−移动，所以第一项是NFA**；
 
     第二项有多个转移，所以也是NFA；
 
@@ -581,9 +581,21 @@ L 代表从这个区域（Exp）映射到这个区域（SetStrings）
 
     最后一项有无限多个状态，所以不是NFA
 
-    
+    答案
+
+    正确:
+
+    This automata has 4 states, S0, S1, S2 and S3. S0 is the start state, S3 is the accepting state. The Transactions are following: If we are in S0 and read 0, we go to S1. If we are in S0 and read 1, we go to S2. If we are in S1 and read 0, we go to S3. If we are in S2 and read 0, we go to S3. If we are in S3 and read 1, we go to S0.
+
+    This automata has 4 states, S0, S1, S2 and S3. S0 is the start state, S3 is the accepting state. The Transactions are following: If we are in S0 and read 0, we can go to S1. If we are in S0 and read 0, we can go to S2. If we are in S1 and read 0, we go to S3. If we are in S2 and read 1, we go to S3. If we are in S3 and read 1, we go to S0.
+
+    This automata has 3 states, S0, S1 and S3. S0 is the start state, S3 is the accepting state. The transactions are following: If we are in S0, we go to S1 with out consuming any input, that is an -move. If we are in S1 and read 0, we go to S3.
 
 ---
+
+
+
+# Week 3
 
 
 
