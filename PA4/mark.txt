@@ -1,0 +1,16 @@
+Grading .....
+make: Entering directory `/usr/class/cs143/cool/assignments/PA4'
+make: Nothing to be done for `source'.
+make: Leaving directory `/usr/class/cs143/cool/assignments/PA4'
+make: Entering directory `/usr/class/cs143/cool/assignments/PA4'
+make: `semant' is up to date.
+make: Leaving directory `/usr/class/cs143/cool/assignments/PA4'
+=====================================================================
+submission: ..
+
+=====================================================================
+You got a score of 74 out of 74.
+
+Submit code: 
+PA3-74:a88e7b09ee0cf795e75880f1c74677af
+
