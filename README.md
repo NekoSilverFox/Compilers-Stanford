@@ -718,6 +718,56 @@ Ambiguous grammars have multiple parse trees for the same string. The first gram
 
 
 
+## 错误处理
+
+编译器的另一项职贵是给错误程序提供良好的反馈，哪怕自只是检测无效程序
+
+![image-20220413125615861](doc/pic/README/image-20220413125615861.png)
+
+![image-20220413125654816](doc/pic/README/image-20220413125654816.png)
+
+
+
+**三种修正模式：**
+
+- 紧急模式（丢弃当前字符，直到能开始正常分析）
+
+    它的基本思路是当一个错误被检测到时解析器会开始抛弃token直到在这门语言中找到一个作用明确的token为止。编译器会试着自己重启，然局从那个点继续工作。它所寻找的这些token被称为同步token
+
+    ![image-20220413130142592](doc/pic/README/image-20220413130142592.png)
+
+    接图片：然后开始分析新的函数或者语句
+
+    ![image-20220413130635035](doc/pic/README/image-20220413130635035.png)
+
+    
+
+- 错误产生式
+
+    （编译器改计者可能知道代码中可能出现的一些常见错误。也可以使用增强语法作为在遇到这些错误时生成错误结构的产品）它将程序员常犯的已知错误指定为语法中的替代产生式
+
+    ![image-20220413130945328](doc/pic/README/image-20220413130945328.png)
+
+    
+
+- 自动局部或全局校正（过分追求的思路）
+
+![image-20220413125748684](doc/pic/README/image-20220413125748684.png)
+
+![image-20220413131222113](doc/pic/README/image-20220413131222113.png)
+
+![image-20220413131422543](doc/pic/README/image-20220413131422543-9844863.png)
+
+
+
+**习题：**
+
+![image-20220413133211708](doc/pic/README/image-20220413133211708.png)
+
+Explanation
+
+The first grammar is the only unambiguous option that generates the same language as the given grammar. The second and third grammars are both ambiguous, but also don't generate the correct language: the second grammar does not generate the empty string, and the third grammar only generates the strings 'a' and 'b'. The last grammar generates no strings at all.
+
 
 
 
