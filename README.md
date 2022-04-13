@@ -770,6 +770,30 @@ The first grammar is the only unambiguous option that generates the same languag
 
 
 
+## 抽象语法树（AST）
+
+**这是编译器中的一种喝核心数据结构**
+
+![image-20220413133542799](doc/pic/README/image-20220413133542799.png)
+
+![image-20220413133615221](doc/pic/README/image-20220413133615221.png)
+
+![image-20220413133812155](doc/pic/README/image-20220413133812155.png)
+
+![image-20220413133905551](doc/pic/README/image-20220413133905551.png)
+
+
+
+## 递归下降法
+
+![image-20220413134502116](doc/pic/README/image-20220413134502116.png)
+
+https://www.bilibili.com/video/BV1cE411f78c?p=24&spm_id_from=pageDriver 
+
+实际上就是不断的通过移动指针进行匹配、回溯、直到全部匹配（建议去看视频）
+
+
+
 
 
 
