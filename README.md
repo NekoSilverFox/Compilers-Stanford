@@ -621,15 +621,45 @@ L 代表从这个区域（Exp）映射到这个区域（SetStrings）
 
 ![image-20220413061822292](doc/pic/README/image-20220413061822292.png)
 
+![image-20220413062057466](doc/pic/README/image-20220413062057466.png)
+
+![image-20220413062127758](doc/pic/README/image-20220413062127758.png)
+
+![image-20220413062252387](doc/pic/README/image-20220413062252387.png)
+
+![image-20220413062538746](doc/pic/README/image-20220413062538746.png)
+
+![image-20220413062655456](doc/pic/README/image-20220413062655456.png)
+
+![image-20220413062806341](doc/pic/README/image-20220413062806341.png)
+
+![image-20220413063418685](doc/pic/README/image-20220413063418685.png)
+
+![image-20220413063458282](doc/pic/README/image-20220413063458282.png)
+
+![image-20220413063550342](doc/pic/README/image-20220413063550342.png)
+
+![image-20220413063738733](doc/pic/README/image-20220413063738733.png)
 
 
 
+所谓终结就是说一旦这个字符串中包含了终结符，那么就没有规则可以替换它们
 
+![image-20220413063905601](doc/pic/README/image-20220413063905601.png)
 
+![image-20220413064212690](doc/pic/README/image-20220413064212690.png)
 
+![image-20220413064355843](doc/pic/README/image-20220413064355843.png)
 
+![image-20220413064620075](doc/pic/README/image-20220413064620075.png)
 
+![image-20220413064836866](doc/pic/README/image-20220413064836866.png)
 
+**习题：**
+
+![image-20220413070958437](doc/pic/README/image-20220413070958437.png)
+
+The production Y -> cXc shows that c's always appear in pairs, which rules out the first answer. The production X -> bY shows that every string with c's also has b's (since this production generates a b and must be used to generate any c's), ruling out the second answer. Combining this production with Y -> cXc, we see that the last c must appear after the last b, which rules out the fourth answer. We then note that S -> aXa -> abYa -> aba derives the third answer
 
 
 
