@@ -692,3 +692,43 @@ The leaves of a valid parse tree are a sequence of terminals. These terminals mu
 
 
 
+## Ambiguity（歧义性）
+
+![image-20220413115713333](doc/pic/README/image-20220413115713333.png)
+
+![image-20220413124220598](doc/pic/README/image-20220413124220598.png)
+
+![image-20220413124332697](doc/pic/README/image-20220413124332697.png)
+
+![image-20220413124507263](doc/pic/README/image-20220413124507263.png)
+
+![image-20220413124733664](doc/pic/README/image-20220413124733664.png)
+
+![image-20220413124758521](doc/pic/README/image-20220413124758521.png)
+
+![image-20220413124855630](doc/pic/README/image-20220413124855630.png)
+
+![image-20220413124938593](doc/pic/README/image-20220413124938593.png)
+
+**练习：**
+
+![image-20220413125233159](doc/pic/README/image-20220413125233159.png)
+
+Ambiguous grammars have multiple parse trees for the same string. The first grammar is ambiguous because the string "aba" has two parse trees: one where S -*> [a][ba] and another where S -*> [ab][a]. Similarly, the second grammar is ambiguous because "id+id+id" can be parsed as either E -*> [id]+[id+id] or E -*> [id+id]+[id]. It is not possible to produce multiple parse trees for any string for the third and fourth grammars, which means they are unambiguous.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
