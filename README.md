@@ -794,6 +794,50 @@ https://www.bilibili.com/video/BV1cE411f78c?p=24&spm_id_from=pageDriver
 
 
 
+![image-20220413135016774](doc/pic/README/image-20220413135016774.png)
+
+![image-20220413135317080](doc/pic/README/image-20220413135317080.png)
+
+![image-20220413142705698](doc/pic/README/image-20220413142705698.png)
+
+![](doc/pic/README/image-20220413142859235.png)
+
+![image-20220413143250999](doc/pic/README/image-20220413143250999.png)
+
+
+
+**习题：**
+
+![image-20220413141231191](doc/pic/README/image-20220413141231191.png)
+
+Recursive descent blindly tries all productions in the order in which they appear. It only discovers that it is on the wrong track when it generates a terminal that doesn't match the input, or when the derivation ends before the end of the input. Make sure you aren't being smarter than a recursive descent parser--it will try every production even when it is "obvious" a production will lead to a dead end.
+
+
+
+
+
+
+
+![image-20220413141746991](doc/pic/README/image-20220413141746991.png)
+
+Individual productions for a nonterminal should be joined with an OR, since we accept the first successful production. Conversely, the right-hand sides of individual productions should be joined with an AND, requiring that all tokens match. Also make sure that the "next" and "save" token pointers actually work as expected; input should be consumed only on successful matches.
+
+![image-20220519161203025](doc/pic/README/image-20220519161203025.png)
+
+## Quiz #2
+
+
+
+# Week4
+
+
+
+
+
+
+
+
+
 
 
 
